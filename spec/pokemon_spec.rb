@@ -50,7 +50,8 @@ describe "Pokemon" do
 
     let(:pikachu){Pokemon.find(1, @db)}
     let(:magikarp){Pokemon.find(2, @db)}
-
+    
+=begin
     # remove the 'x' before 'it' to run these tests
     xit "knows that a pokemon have a default hp of 60" do
       # The find method should create a new Pokemon object with an id, type, name AND hp after selecting their row from the database by their id number.
@@ -70,5 +71,7 @@ describe "Pokemon" do
       magikarp.alter_hp(0, @db)
       expect(Pokemon.find(2, @db).hp).to eq(0)
     end
+=end
+
   end
 end
